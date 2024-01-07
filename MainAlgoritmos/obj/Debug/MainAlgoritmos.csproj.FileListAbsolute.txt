@@ -8,3 +8,5 @@ C:\Users\Adalberto\Documents\SharpDevelop Projects\MainAlgoritmos\MainAlgoritmos
 C:\Users\Adalberto\Documents\SharpDevelop Projects\MainAlgoritmos\MainAlgoritmos\obj\Debug\MainAlgoritmos.pdb
 C:\Users\Adalberto\Documents\SharpDevelop Projects\MainAlgoritmos\MainAlgoritmos\obj\Debug\MainAlgoritmos.FormTablasdeFrecuencia.resources
 C:\Users\Adalberto\Documents\SharpDevelop Projects\MainAlgoritmos\MainAlgoritmos\obj\Debug\MainAlgoritmos.EntrenamientoPrueba.resources
+C:\Users\Adalberto\Documents\SharpDevelop Projects\MainAlgoritmos\MainAlgoritmos\obj\Debug\MainAlgoritmos.DescripcionDeModelo.resources
+C:\Users\Adalberto\Documents\SharpDevelop Projects\MainAlgoritmos\MainAlgoritmos\obj\Debug\MainAlgoritmos.Probabilidad.resources

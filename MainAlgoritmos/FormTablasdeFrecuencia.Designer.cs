@@ -18,6 +18,10 @@ namespace MainAlgoritmos
 		private System.Windows.Forms.DataGridView dataGridViewReglas;
 		private System.Windows.Forms.Button btnRegresar;
 		private System.Windows.Forms.Button btnReglas;
+		private System.Windows.Forms.Button btnDesc;
+		private System.Windows.Forms.Button btnVerosimilitud;
+		private System.Windows.Forms.Button btnCorregir;
+		private System.Windows.Forms.Button btnProbabilidad;
 		
 		/// <summary>
 		/// Disposes resources used by the form.
@@ -44,6 +48,10 @@ namespace MainAlgoritmos
 			this.dataGridViewReglas = new System.Windows.Forms.DataGridView();
 			this.btnRegresar = new System.Windows.Forms.Button();
 			this.btnReglas = new System.Windows.Forms.Button();
+			this.btnDesc = new System.Windows.Forms.Button();
+			this.btnVerosimilitud = new System.Windows.Forms.Button();
+			this.btnCorregir = new System.Windows.Forms.Button();
+			this.btnProbabilidad = new System.Windows.Forms.Button();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridViewE)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridViewReglas)).BeginInit();
 			this.SuspendLayout();
@@ -80,17 +88,61 @@ namespace MainAlgoritmos
 			// 
 			this.btnReglas.Location = new System.Drawing.Point(12, 490);
 			this.btnReglas.Name = "btnReglas";
-			this.btnReglas.Size = new System.Drawing.Size(224, 49);
+			this.btnReglas.Size = new System.Drawing.Size(172, 49);
 			this.btnReglas.TabIndex = 3;
 			this.btnReglas.Text = "Generar las Reglas";
 			this.btnReglas.UseVisualStyleBackColor = true;
 			this.btnReglas.Click += new System.EventHandler(this.BtnReglasClick);
+			// 
+			// btnDesc
+			// 
+			this.btnDesc.Location = new System.Drawing.Point(217, 490);
+			this.btnDesc.Name = "btnDesc";
+			this.btnDesc.Size = new System.Drawing.Size(176, 49);
+			this.btnDesc.TabIndex = 4;
+			this.btnDesc.Text = "Descripción de modelo";
+			this.btnDesc.UseVisualStyleBackColor = true;
+			this.btnDesc.Click += new System.EventHandler(this.BtnDescClick);
+			// 
+			// btnVerosimilitud
+			// 
+			this.btnVerosimilitud.Location = new System.Drawing.Point(426, 490);
+			this.btnVerosimilitud.Name = "btnVerosimilitud";
+			this.btnVerosimilitud.Size = new System.Drawing.Size(155, 49);
+			this.btnVerosimilitud.TabIndex = 5;
+			this.btnVerosimilitud.Text = "Verosimilitud";
+			this.btnVerosimilitud.UseVisualStyleBackColor = true;
+			this.btnVerosimilitud.Click += new System.EventHandler(this.BtnVerosimilitudClick);
+			// 
+			// btnCorregir
+			// 
+			this.btnCorregir.Location = new System.Drawing.Point(613, 490);
+			this.btnCorregir.Name = "btnCorregir";
+			this.btnCorregir.Size = new System.Drawing.Size(150, 49);
+			this.btnCorregir.TabIndex = 6;
+			this.btnCorregir.Text = "Corregir";
+			this.btnCorregir.UseVisualStyleBackColor = true;
+			this.btnCorregir.Click += new System.EventHandler(this.BtnCorregirClick);
+			// 
+			// btnProbabilidad
+			// 
+			this.btnProbabilidad.Location = new System.Drawing.Point(801, 490);
+			this.btnProbabilidad.Name = "btnProbabilidad";
+			this.btnProbabilidad.Size = new System.Drawing.Size(135, 49);
+			this.btnProbabilidad.TabIndex = 7;
+			this.btnProbabilidad.Text = "Probabilidad";
+			this.btnProbabilidad.UseVisualStyleBackColor = true;
+			this.btnProbabilidad.Click += new System.EventHandler(this.BtnProbabilidadClick);
 			// 
 			// FormTablasdeFrecuencia
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(1208, 551);
+			this.Controls.Add(this.btnProbabilidad);
+			this.Controls.Add(this.btnCorregir);
+			this.Controls.Add(this.btnVerosimilitud);
+			this.Controls.Add(this.btnDesc);
 			this.Controls.Add(this.btnReglas);
 			this.Controls.Add(this.btnRegresar);
 			this.Controls.Add(this.dataGridViewReglas);

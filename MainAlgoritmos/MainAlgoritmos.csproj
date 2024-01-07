@@ -50,6 +50,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DescripcionDeModelo.cs" />
+    <Compile Include="DescripcionDeModelo.Designer.cs">
+      <DependentUpon>DescripcionDeModelo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Ejemplo.cs" />
     <Compile Include="EntrenamientoPrueba.cs" />
     <Compile Include="EntrenamientoPrueba.Designer.cs">
@@ -63,6 +67,10 @@
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Probabilidad.cs" />
+    <Compile Include="Probabilidad.Designer.cs">
+      <DependentUpon>Probabilidad.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -70,6 +78,9 @@
     <None Include="app.config" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="DescripcionDeModelo.resx">
+      <DependentUpon>DescripcionDeModelo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="EntrenamientoPrueba.resx">
       <DependentUpon>EntrenamientoPrueba.cs</DependentUpon>
     </EmbeddedResource>
@@ -78,6 +89,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Probabilidad.resx">
+      <DependentUpon>Probabilidad.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

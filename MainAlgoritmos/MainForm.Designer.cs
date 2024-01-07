@@ -18,6 +18,8 @@ namespace MainAlgoritmos
 		private System.Windows.Forms.DataGridView dataGridView1;
 		private System.Windows.Forms.Button btnOneR;
 		private System.Windows.Forms.Button btnSalir;
+		private System.Windows.Forms.Button btnBayes;
+		private System.Windows.Forms.OpenFileDialog openFileDialog1;
 		
 		/// <summary>
 		/// Disposes resources used by the form.
@@ -44,6 +46,8 @@ namespace MainAlgoritmos
 			this.dataGridView1 = new System.Windows.Forms.DataGridView();
 			this.btnOneR = new System.Windows.Forms.Button();
 			this.btnSalir = new System.Windows.Forms.Button();
+			this.btnBayes = new System.Windows.Forms.Button();
+			this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
 			this.SuspendLayout();
 			// 
@@ -86,11 +90,26 @@ namespace MainAlgoritmos
 			this.btnSalir.UseVisualStyleBackColor = true;
 			this.btnSalir.Click += new System.EventHandler(this.BtnSalirClick);
 			// 
+			// btnBayes
+			// 
+			this.btnBayes.Location = new System.Drawing.Point(434, 496);
+			this.btnBayes.Name = "btnBayes";
+			this.btnBayes.Size = new System.Drawing.Size(116, 42);
+			this.btnBayes.TabIndex = 4;
+			this.btnBayes.Text = "Naïve Bayes";
+			this.btnBayes.UseVisualStyleBackColor = true;
+			this.btnBayes.Click += new System.EventHandler(this.BtnBayesClick);
+			// 
+			// openFileDialog1
+			// 
+			this.openFileDialog1.FileName = "openFileDialog1";
+			// 
 			// MainForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(953, 550);
+			this.ClientSize = new System.Drawing.Size(994, 550);
+			this.Controls.Add(this.btnBayes);
 			this.Controls.Add(this.btnSalir);
 			this.Controls.Add(this.btnOneR);
 			this.Controls.Add(this.dataGridView1);
